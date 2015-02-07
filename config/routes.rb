@@ -4,11 +4,16 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'pages#home'
-  get '/contact' => 'pages#contact'
   get '/about' => 'pages#about'
   get '/getfood' => 'pages#getfood'
   get '/volunteer' => 'pages#volunteer'
   get '/donate' => 'pages#donate'
+
+  get '/contacts' => 'contacts#new'
+  resources "contacts", only: [:new, :create]
+
+
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
