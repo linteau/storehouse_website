@@ -3,6 +3,8 @@ class ContactsController < ApplicationController
     @contact = Contact.new
     @page_name = "Contact"
     @bread_crumb = true
+    @active_contact = 'active'
+
   end
 
   def create
