@@ -1,16 +1,62 @@
-<div align="center">
-  <h3>Send A message to Us</h3>
 
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
-    <div class= "hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+<div class="container">
+
+  <div class="row">
+    <!-- Map Column -->
+    <div class="col-md-8">
+        <!-- Embedded Google Map -->
+        <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3279.105024441694!2d-76.745958!3d34.727747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a893c2ba721d09%3A0x59bfeaeaadefb977!2s3114+Bridges+St%2C+Morehead+City%2C+NC+28557!5e0!3m2!1sen!2sus!4v1422950735115"></iframe>
     </div>
-    <div>
-      </br>
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
-    </div>
-  <% end %>
+    <!-- Contact Details Column -->
+    <div class="col-md-4">
+        <h3>Contact Details</h3>
+        <p>
+            3114 Bridges St<br>Morehead City, NC 28557<br>
+        </p>
+        <p><i class="fa fa-phone"></i> 
+            <abbr title="Phone">P</abbr>: (123) 456-7890</p>
+        <p><i class="fa fa-envelope-o"></i> 
+            <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">storehouse505@gmail.com</a>
+        </p>
+        <p><i class="fa fa-clock-o"></i> 
+            <abbr title="Hours">H</abbr>: Tuesday & Thursday: 1:00 PM to 5:00 PM</p>
+        <ul class="list-unstyled list-inline list-social-icons">
+            <li>
+                <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+            </li>
+        </ul>
+      </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-8">
+
+      <h3>Send us message</h3>
+
+      <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+        <%= f.input :name, label: "Full Name", :required => true %>
+        <%= f.input :email, :required => true %>
+        <%= f.input :phone, :required => true %>
+        <%= f.input :message, :as => :text, :required => true %>
+        <div class= "hidden">
+          <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+        </div>
+        <div>
+          </br>
+          <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+        </div>
+      <% end %>
+
+  </div>
+
 </div>
