@@ -7,7 +7,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-	<body onload="myFunction()">
+	<body>
     <div class="container">
   <% flash.each do |key, value| %>
     <div class="alert alert-<%=key.to_s%>" role="alert">
@@ -15,10 +15,25 @@
     </div>
   <% end %>
 </div>
-
 	<%= render 'layouts/header'%>
 
 		<%= yield %>
+
+   <% unless @active_home == 'active'%>
+
+    <hr class="last">
+
+        <div class="footer-scripture">
+            <div>
+                <blockquote>
+                    <i><span class="scripture">Truly I tell you, whatever you did for one of the least of these brothers and sisters of mine, you did for me.</i></span><br>
+                    <i><span class="verse">--Matthew 25:40</span></i>
+
+                </blockquote>
+            </div>
+        </div>
+
+        <% end %>
 
 		<!-- Footer -->
         <footer>

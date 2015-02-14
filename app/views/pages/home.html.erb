@@ -1,7 +1,6 @@
 
-
     <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
+    <header id="myCarousel" class="carousel slide container sides">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -20,7 +19,7 @@
             <div class="item">
                 <div class="fill" style="background-image:url('https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn2/v/t1.0-9/533990_595427190487260_221578895_n.jpg?oh=14a507a49ea083c8632cda884b0765f9&oe=5560DD40&__gda__=1433206286_2203093917778edcce8f8e21de639278');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 2</h2>
+                    <h2>Another Pickup!</h2>
                 </div>
             </div>
             <div class="item">
@@ -41,7 +40,7 @@
     </header>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container home sides">
 
         <!-- Marketing Icons Section -->
         <div class="row">
@@ -53,55 +52,51 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-cutlery"></i> Get Food</h4>
+                        <h2><i class="fa fa-cutlery"></i>Get Food</h2>
                     </div>
                     <div class="panel-body">
                         <p>If you or your family is in need for food, come by to the Storehouse Food Pantry to get the helpin hand you need. We welcome all those who are in need.</p>
-                        <%= link_to 'Learn More', getfood_path, class: "btn btn-default" %>
+                        <%= link_to 'Learn More', getfood_path, class: "btn btn-primary btn-lg" %>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-money"></i> Donate</h4>
+                        <h2><i class="fa fa-money"></i> Donate</h2>
                     </div>
                     <div class="panel-body">
                         <p>Our ministry thrives because of the generous support from churches, individuals, and local grocery stores in the area. We welcome and are thankful for all donations.</p>
-                        <%= link_to 'Learn More', donate_path, class: "btn btn-default" %>
+                        <%= link_to 'Learn More', donate_path, class: "btn btn-primary btn-lg" %>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-clock-o"></i> Volunteer</h4>
+                        <h2><i class="fa fa-clock-o"></i> Volunteer</h2>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <%= link_to 'Learn More', volunteer_path, class: "btn btn-default" %>
+                        <p>Since we eperience high volumes fo families in need, we can always use a helping hand. Check out our Volunteer page to see how you can partner with us.</p>
+                        <%= link_to 'Learn More', volunteer_path, class: "btn btn-primary btn-lg" %>
                     </div>
                 </div>
             </div>
         </div>
         <!-- /.row -->
 
+        <hr class="last">
 
-        <hr>
+        <div class="footer-scripture">
+            <div>
+                <blockquote>
+                    <i><span class="scripture">Truly I tell you, whatever you did for one of the least of these brothers and sisters of mine, you did for me.</i></span>
+                    <i><span class="verse">--Matthew 25:40</span></i>
 
-        <!-- Call to Action Section -->
-        <div class="well">
-            <div class="row">
-                <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
-                </div>
+                </blockquote>
             </div>
         </div>
 
-        <hr>
 
     </div>
     <!-- /.container -->
