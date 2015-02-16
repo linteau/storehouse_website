@@ -17,9 +17,21 @@
 </div>
 	<%= render 'layouts/header'%>
 
-		<%= yield %>
+  <% unless @active_home == 'active'%>
 
-    <%= render 'layouts/footer'%>
+  <div class="container sides content-wrapper"> 
+
+    <%= yield %>
+     <%= render 'layouts/footer'%>
+  </div>
+
+  <%else%>
+      <%= yield %>
+
+
+  <% end %>
+
+   
 
 	</body>
 </html>
