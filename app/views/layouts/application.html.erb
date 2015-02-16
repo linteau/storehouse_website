@@ -19,30 +19,7 @@
 
 		<%= yield %>
 
-   <% unless @active_home == 'active'%>
-
-    <hr class="last">
-
-        <div class="footer-scripture">
-            <div>
-                <blockquote>
-                    <i><span class="scripture">Truly I tell you, whatever you did for one of the least of these brothers and sisters of mine, you did for me.</i></span><br>
-                    <i><span class="verse">--Matthew 25:40</span></i>
-
-                </blockquote>
-            </div>
-        </div>
-
-        <% end %>
-
-		<!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
+    <%= render 'layouts/footer'%>
 
 	</body>
 </html>
