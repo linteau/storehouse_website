@@ -1,6 +1,6 @@
 
 	.center{
-		margin:auto;
+		margin:auto !important;
 	}
 	body{
 		padding-top:0px !important;
@@ -184,6 +184,7 @@ h1.page-header{
 
 img.family-eating{
 	margin: 25px 0 0 0;
+	display:block;
 }
 
 // Donate page CSS
