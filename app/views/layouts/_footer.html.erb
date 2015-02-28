@@ -14,26 +14,51 @@
 		<!-- Footer -->
         <div class="footer-social">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
+                <div class="row social-footer-element-desktop">
+                   
+                    <div class="col-md-4">
                         <h2>Connect With Us</h2>
                         <div class="social-links">
                         <%= link_to(image_tag('https://s3.amazonaws.com/storehouse-images/FaceBook_64x64.png', height: '50'), "https://www.facebook.com/pages/The-Storehouse-Food-Pantry-Morehead-City-NC/320348534722779?ref=br_tf", target: "_blank") %>
                         <%= link_to(image_tag('https://s3.amazonaws.com/storehouse-images/Email-64.png', height: '40'), "/contacts") %>
-                        </div>
 
+                        </div>
                     </div>
-                    <div class="col-lg-4">
-                        
-                    </div>
-                    <div class="col-lg-4">
+
+
+
+                    <div class="col-md-4 col-md-offset-4">
                         <%= image_tag('https://s3.amazonaws.com/storehouse-images/Storehouse+Logo-Transparent.png', height:'50', class: 'logo') %>
                         <p>3114 Bridges Street<br>
                             Morehead City, NC 28557<br>
                             <b>Phone:</b>(252) 725-5539</p>
                     </div>
+
                 </div>
-            </div>
+
+                <div class="social-footer-element-mobile">
+                   
+                    <div class="text-center connect-with-us">
+                        <h2>Connect With Us</h2>
+                        <div class="text-center">
+                        <%= link_to(image_tag('https://s3.amazonaws.com/storehouse-images/FaceBook_64x64.png', height: '50'), "https://www.facebook.com/pages/The-Storehouse-Food-Pantry-Morehead-City-NC/320348534722779?ref=br_tf", target: "_blank") %>
+                        <%= link_to(image_tag('https://s3.amazonaws.com/storehouse-images/Email-64.png', height: '40'), "/contacts") %>
+
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="social-footer-element-mobile">
+
+                    <div class="text-center">
+                        <%= image_tag('https://s3.amazonaws.com/storehouse-images/Storehouse+Logo-Transparent.png', height:'50', class: 'logo') %>
+                        <p>3114 Bridges Street<br>
+                            Morehead City, NC 28557<br>
+                            <b>Phone:</b>(252) 725-5539</p>
+                    </div>
+              </div>
+
+            </div><!--  Container -->
         </div>
         <div class="myfooter nav navbar-inverse">
             <div class="copyright pull-left">
