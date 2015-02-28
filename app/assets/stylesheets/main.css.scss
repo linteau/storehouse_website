@@ -200,7 +200,8 @@ img.family{
 // Volunteer Page
 .img-volunteer{
 	position: relative;
-	top: 30px;
+	margin-top: 30px !important;
+
 }
 
 //responsive actions
@@ -229,6 +230,10 @@ img.family{
     	margin-bottom: 20px !important;
 
     }
+    .img-volunteer{
+	margin-top: 15px !important;
+
+}
   }
 
   @media screen and (min-width: 1000px) {
